@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <AppBar>
+    <AppBar position="sticky">
       <Container sx={{ paddingY: "10px" }}>
         <div className="flex justify-between">
           <div>

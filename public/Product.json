@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 13 Pro Max",
+    "price": 1199,
+    "details": "The most advanced iPhone ever.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 2,
+    "name": "iPad Air",
+    "price": 599,
+    "details": "The most powerful iPad Air yet.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 3,
+    "name": "MacBook Pro",
+    "price": 1299,
+    "details": "The most powerful MacBook Pro ever.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Apple Watch Series 7",
+    "price": 399,
+    "details": "The most advanced Apple Watch yet.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 5,
+    "name": "AirPods Pro",
+    "price": 249,
+    "details": "The most advanced AirPods yet.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Beats Studio Buds",
+    "price": 149,
+    "details": "The most comfortable wireless earbuds yet.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 7,
+    "name": "HomePod mini",
+    "price": 99,
+    "details": "The most powerful smart speaker yet.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Apple TV 4K",
+    "price": 179,
+    "details": "The most powerful streaming device yet.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 9,
+    "name": "MagSafe Duo Charger",
+    "price": 109,
+    "details": "The most versatile wireless charger yet.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 10,
+    "name": "AirTag",
+    "price": 29,
+    "details": "The most convenient way to track your belongings.",
+    "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+  }
+]
