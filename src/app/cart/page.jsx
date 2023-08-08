@@ -9,8 +9,8 @@ const Cart = () => {
   return (
     <section>
       <Container>
-        {cartData?.map((pro) => (
-          <CartProductItem key={pro.id} product={pro} />
+        {cartData?.map((pro, index) => (
+          <CartProductItem key={index} product={pro} index={index} />
         ))}
       </Container>
     </section>

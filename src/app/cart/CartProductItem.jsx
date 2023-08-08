@@ -1,8 +1,11 @@
+import { deleteToCart } from "@/RTK-state/Slice/productSlice";
 import { CheckOutlined, DeleteOutlineOutlined } from "@mui/icons-material";
 import { Avatar, Button, Card, Typography } from "@mui/material";
 import Image from "next/image";
+import { useDispatch } from "react-redux";
 
-const CartProductItem = ({ product }) => {
+const CartProductItem = ({ product, index }) => {
+  const dispatch = useDispatch();
   return (
     <div className="my-4">
       <Card sx={{ bgcolor: "#e8e7ec", padding: "5px" }}>
@@ -25,7 +28,11 @@ const CartProductItem = ({ product }) => {
               <Button variant="contained" color="primary">
                 <CheckOutlined />
               </Button>
-              <Button variant="contained" color="warning">
+              <Button
+                variant="contained"
+                color="warning"
+                onClick={() => dispatch(deleteToCart(index))}
+              >
                 <DeleteOutlineOutlined />
               </Button>
             </div>
