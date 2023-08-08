@@ -47,7 +47,7 @@ const ProductCard = ({ product }) => {
       </CardMedia>
       <CardContent>
         <div>
-          <Typography variant="p" sx={{ fontSize: "22px" }}>
+          <Typography variant="p" sx={{ fontSize: "22px" }} noWrap={true}>
             {product?.details}
           </Typography>
           <p>

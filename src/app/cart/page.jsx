@@ -1,7 +1,16 @@
+import Navbar from "@/components/Navbar";
+import RtkProvider from "@/components/RtkProvider";
 import React from "react";
 
 const Cart = () => {
-  return <div>cart page</div>;
+  return (
+    <RtkProvider>
+      <main>
+        {/* <Navbar /> */}
+        cart page
+      </main>
+    </RtkProvider>
+  );
 };
 
 export default Cart;

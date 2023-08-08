@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+"use client";
+import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import { Container } from "@mui/material";
 import axios from "axios";

@@ -12,8 +12,8 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
-  const cartAmount = useSelector((state) => state.cartData.length);
-  // console.log(product);
+  const cartAmount = useSelector((state) => state?.cartData);
+  console.log(cartAmount);
   return (
     <AppBar position="sticky">
       <Container sx={{ paddingY: "10px" }}>
@@ -22,11 +22,11 @@ const Navbar = () => {
             <Typography variant="h3"> Loge</Typography>
           </div>
           <div className="flex gap-3 items-center text-white font-semibold">
-            <Link href={"#"}>Home</Link>
+            <Link href={"/"}>Home</Link>
             <Link href={"#"}>About</Link>
             <IconButton>
-              <Link href={"#"}>
-                <Badge color="success" badgeContent={cartAmount}>
+              <Link href={"/cart"}>
+                <Badge color="success" badgeContent={cartAmount?.length}>
                   <ShoppingCartIcon className="text-white" />
                 </Badge>
               </Link>
