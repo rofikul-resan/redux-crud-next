@@ -13,7 +13,6 @@ import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const cartAmount = useSelector((state) => state?.cartData);
-  console.log(cartAmount);
   return (
     <AppBar position="sticky">
       <Container sx={{ paddingY: "10px" }}>
