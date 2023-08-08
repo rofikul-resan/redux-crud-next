@@ -9,8 +9,11 @@ import {
 } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const cartAmount = useSelector((state) => state.cartData.length);
+  // console.log(product);
   return (
     <AppBar position="sticky">
       <Container sx={{ paddingY: "10px" }}>
@@ -23,7 +26,7 @@ const Navbar = () => {
             <Link href={"#"}>About</Link>
             <IconButton>
               <Link href={"#"}>
-                <Badge color="success" badgeContent={4}>
+                <Badge color="success" badgeContent={cartAmount}>
                   <ShoppingCartIcon className="text-white" />
                 </Badge>
               </Link>
