@@ -1,14 +1,17 @@
 "use client";
-const { createSlice } = require("@reduxjs/toolkit");
+const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
 
-// let initialState = [];
-// const initStateStr = localStorage.getItem("cart");
-// if (initStateStr) {
-//   const initCart = JSON.parse(initStateStr);
-//   initialState = [...initCart];
-// } else {
-//   localStorage.setItem("cart", JSON.stringify([]));
-// }
+export const getCart = createAsyncThunk("cart/getCart", async () => {
+  let initialState = [];
+  const initStateStr = localStorage.getItem("cart");
+  if (initStateStr) {
+    const initCart = await JSON.parse(initStateStr);
+    initialState = [...initCart];
+  } else {
+    localStorage.setItem("cart", JSON.stringify([]));
+  }
+  return initialState;
+});
 
 const Cart = createSlice({
   name: "cartData",
@@ -16,14 +19,20 @@ const Cart = createSlice({
   reducers: {
     addToCart: (state, action) => {
       state.push(action.payload);
-      // localStorage.setItem("cart", JSON.stringify([...state]));
+      localStorage.setItem("cart", JSON.stringify([...state]));
     },
     deleteToCart: (state, action) => {
       const index = action.payload;
       const remain = state.splice(index, 1);
 
-      // localStorage.setItem("cart", JSON.stringify([...state]));
+      localStorage.setItem("cart", JSON.stringify([...state]));
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(getCart.fulfilled, (state, action) => {
+      const data = action.payload;
+      data.forEach((d) => state.push(d));
+    });
   },
 });
 
