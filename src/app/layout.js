@@ -1,8 +1,7 @@
-"use client";
-import RtkProvider from "@/components/RtkProvider";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Providers from "@/components/RtkProvider";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -18,10 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <RtkProvider>
+        <Providers>
           <Navbar />
           {children}
-        </RtkProvider>
+        </Providers>
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+"use client";
 import { cartReducer } from "../Slice/productSlice";
 
 const { configureStore } = require("@reduxjs/toolkit");

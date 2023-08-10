@@ -1,9 +1,10 @@
+"use client";
 import { store } from "@/RTK-state/store/Store";
 import React from "react";
 import { Provider } from "react-redux";
 
-const RtkProvider = ({ children }) => {
+const Providers = ({ children }) => {
   return <Provider store={store}>{children}</Provider>;
 };
 
-export default RtkProvider;
+export default Providers;
